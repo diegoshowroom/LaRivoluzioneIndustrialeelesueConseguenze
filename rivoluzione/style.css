@@ -1,0 +1,1161 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.home {
+    --page-background-image: url("immagini/1.jpg");
+    --page-background-size: 100% auto;
+    --page-background-x: 0px;
+    --page-background-y: -240px;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: var(--page-background-x) var(--page-background-y);
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+}
+body.tour {
+    --page-background-image: url("immagini/28lug26__1050962.jpg");
+    --page-background-size: 100% auto;
+    --page-background-x: 0px;
+    --page-background-y: -100px;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: var(--page-background-x) var(--page-background-y);
+    background-repeat: no-repeat;
+
+
+    overflow-x: hidden;
+}
+
+
+
+body.musica {
+    --page-background-image: url("immagini/1-38.jpg");
+    --page-background-size: 120% auto;
+    --page-background-x: 0px;
+    --page-background-y: -800px;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: var(--page-background-x) var(--page-background-y);
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+}
+body.merch {
+    --page-background-image: url("immagini/28lug26__1050904.jpg");
+    --page-background-size: 150% auto;
+    --page-background-x: 0px;
+    --page-background-y: -560px;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: var(--page-background-x) var(--page-background-y);
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   TOP BAR
+   ===================================================== */
+
+.topbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: transparent;
+
+    border-bottom: 2px solid rgb(255, 0, 110);
+
+    z-index: 1000;
+}
+
+.topbar-tour {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: transparent;
+
+    border-bottom: 2px solid rgb(255, 0, 110);
+
+    z-index: 1000;
+}
+
+.topbar-musica {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   background: transparent;
+    border-bottom: 2px solid rgb(255, 0, 110);
+
+    z-index: 1000;
+}
+
+.topbar-merch {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: transparent;
+    border-bottom: 2px solid rgb(255, 0, 110);
+
+    z-index: 1000;
+}
+
+
+.site-name,
+.navigation a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    transform: scaleY(5);
+    transform-origin: center center;
+    display: inline-block;
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.navigation a {
+    color: rgb(255, 0, 110);
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.navigation a:hover {
+   color: rgb(255, 255, 255);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+    padding-top: 60px;
+
+    width: 100%;
+}
+
+
+/*
+
+*/
+
+.title-wrapper {
+
+    padding: 70px 24px 0;
+
+    width: 100%;
+
+    overflow: visible;
+}
+
+
+h1 {
+
+    margin-top: 130px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-weight: 900;
+
+    /*
+   
+    */
+
+    font-size: 7vw;
+
+    line-height: 0.82;
+
+    letter-spacing: -0.055em;
+
+    /*
+       100% larghezza
+       500% altezza
+    */
+
+    transform: scaleY(5);
+
+    transform-origin: center;
+
+    /*
+     
+    */
+
+    width: 100%;
+}
+
+
+h2 {
+
+    margin: 0;
+
+    font-family: "Nunito", sans-serif;
+
+    font-weight: 900;
+    font-size: 5vw;
+
+    line-height: 0.82;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+
+    margin-top: 8vw;
+    font-size: 3vw;
+    line-height: 1;
+
+    width: 100%;
+}
+h2 a {
+    /* Change these values to resize the Spotify button. */
+    --spotify-button-width: 230px;
+    --spotify-button-height: 200px;
+    display: inline-block;
+    position: relative;
+    isolation: isolate;
+    width: var(--spotify-button-width);
+    text-align: center;
+    vertical-align: baseline;
+    color: #ffffff;
+    text-decoration: none;
+}
+h2 a::before {
+    position: absolute;
+    z-index: -1;
+    top: 47.5%;
+    left: 51%;
+    width: var(--spotify-button-width);
+    height: var(--spotify-button-height);
+    border-radius: 12px;
+    background: rgb(255, 0, 110);
+    content: "";
+    transform: translate(-50%, -50%) scaleY(0.2);
+    transition: background-color 0.2s ease;
+}
+h2 a:hover {
+    color: rgb(255, 0, 110);
+}
+h2 a:hover::before {
+    background: rgb(255, 255, 255);
+}
+h2 a:focus-visible {
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: 4px;
+}
+h3 {
+
+  margin-top: -60px;
+
+    font-family: "Nunito", sans-serif;
+
+    font-weight: 900;
+    font-size: 4vw;
+
+    line-height: .8;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+
+    
+    
+    
+
+    width: 100%;
+}
+
+h4 {
+    margin-top: 27vw;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 1vw;
+    line-height: .5;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+h4 .tour-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.8vw;
+}
+
+h4 .city {
+    min-width: 120px;
+    display: inline-block;
+}
+
+h5 {
+    margin-top: 1vw;
+    margin-left: 270px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 1vw;
+    line-height: .8;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+h6 {
+    margin-top: -655px;
+    margin-left: -150px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 1vw;
+    line-height: 1;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+h6 a {
+    /* Change these values to resize the link button. */
+    --h6-button-width: auto;
+    --h6-button-height: 78px;
+    display: inline-block;
+    position: relative;
+    isolation: isolate;
+    width: var(--h6-button-width);
+    text-align: center;
+    vertical-align: baseline;
+    color: #ffffff;
+    text-decoration: none;
+}
+h6 a:hover {
+    color: rgb(255, 0, 110);
+}
+h6 a::before {
+    position: absolute;
+    z-index: -1;
+    top: 46.5%;
+    left: 50%;
+    width: calc(100% + 10px);
+    height: var(--h6-button-height);
+    border-radius: 8px;
+    background: rgb(255, 0, 110);
+    content: "";
+    transform: translate(-50%, -50%) scaleY(0.2);
+    transition: background-color 0.2s ease;
+}
+h6 a:hover::before {
+    background: rgb(255, 255, 255);
+}
+h6 a:focus-visible {
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: 4px;
+}
+
+h7 {
+    margin-top: 1vw;
+    margin-left: 350px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+    font-size: 1vw;
+    line-height: .8;
+    letter-spacing: -0.055em;
+    transform: scaleY(5);
+    transform-origin: top left;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+/* =====================================================
+   INTRO
+   ===================================================== */
+
+.intro {
+
+    margin-top: 42vw;
+
+    padding: 0 24px 120px;
+
+    max-width: 900px;
+}
+
+
+.intro p {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.03em;
+}
+
+
+/* =====================================================
+   CONTENT
+   ===================================================== */
+
+.content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 30px;
+
+    padding: 80px 24px 160px;
+
+    border-top: 2px solid #000000;
+}
+
+
+.content-number {
+
+    font-size: 20px;
+}
+
+
+.content-text {
+
+    max-width: 800px;
+}
+
+
+.content-text h2 {
+
+    margin: 0 0 30px;
+
+    font-size: 64px;
+
+    line-height: 0.9;
+
+    letter-spacing: -0.05em;
+}
+
+
+.content-text p {
+
+    margin: 0;
+
+    max-width: 600px;
+
+    font-size: 24px;
+
+    line-height: 1.1;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer.home {
+
+    margin-top: 250px;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+
+
+    font-size: 10px;
+    transform: scaleY(5);
+}
+footer.tour {
+
+    margin-top: 152px;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+
+
+    font-size: 10px;
+    transform: scaleY(5);
+}
+footer.music {
+
+    margin-top: 570px;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+
+
+    font-size: 10px;
+    transform: scaleY(5);
+}
+
+footer.merch {
+
+    margin-top: 600px;
+    margin-bottom: 8px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+
+
+    font-size: 10px;
+    transform: scaleY(5);
+}
+
+footer a {
+    color: rgb(255, 0, 110);
+    text-decoration: none;
+}
+footer a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.music-slider {
+    width: min(66vw, 700px);
+    margin-left: 100PX;
+    padding: 0 24px 80px;
+    
+}
+
+
+
+
+.slider {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.slides {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 2px solid rgb(255, 0, 110);
+    background: rgba(0, 37, 220, 0.5);
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slider-btn {
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: rgb(255, 0, 110);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.slider-btn:hover {
+    color: #ffffff;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 0, 110, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: rgb(255, 0, 110);
+}
+
+.merch-slider {
+    width: min(66vw, 700px);
+    margin-left: 100PX;
+    padding: 0 24px 80px;
+}
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    body.home,
+    body.tour,
+    body.musica,
+    body.merch {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    body > main {
+        flex: 1 0 auto;
+    }
+
+    body.home > main,
+    body.tour > main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.musica > main {
+        padding-bottom: 470px;
+    }
+
+    body.merch > main {
+        padding-bottom: 400px;
+    }
+
+    /* ---------- TOPBAR ---------- */
+
+    .topbar {
+
+        height: 50px;
+
+        padding: 0 12px;
+    }
+
+    body.home {
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    --page-background-size: 150% auto;
+    --page-background-y: 0px;
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: var(--page-background-x) var(--page-background-y);
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+    }
+
+     body.tour {
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+
+    background: #002aff;
+    color: rgb(255, 0, 110);
+
+    --page-background-size: 155% auto;
+    --page-background-y: 0px;
+    background-image: var(--page-background-image);
+    background-size: var(--page-background-size);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+    }
+
+    body.musica {
+        --page-background-size: auto 100%;
+        --page-background-x: center;
+        --page-background-y: 0px;
+        background-image: var(--page-background-image);
+        background-size: var(--page-background-size);
+        background-position: var(--page-background-x) var(--page-background-y);
+        background-repeat: no-repeat;
+    }
+
+    body.home,
+    body.tour,
+    body.musica,
+    body.merch {
+        position: relative;
+        isolation: isolate;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    body.home::before,
+    body.tour::before,
+    body.musica::before,
+    body.merch::before {
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background-image: var(--page-background-image);
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        content: "";
+        pointer-events: none;
+    }
+    
+
+
+    .site-name {
+
+        font-size: 12px;
+
+        margin-top: 6px;
+
+        max-width: 130px;
+
+        white-space: normal;
+
+        line-height: 0.95;
+    }
+
+
+    .navigation {
+
+        gap: 10px;
+    }
+
+
+    .navigation a {
+
+        font-size: 11px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+
+        padding-top: 50px;
+    }
+
+
+    .title-wrapper {
+
+        padding: 40px 12px 0;
+    }
+
+
+    h1 {
+
+        /*
+           Dimensione base mobile.
+           Anche qui viene mantenuto il rapporto
+           di deformazione verticale 500%.
+        */
+
+        font-size: 15vw;
+
+        line-height: 0.82;
+
+        letter-spacing: -0.055em;
+
+        
+    }
+
+
+    /*
+       Spazio compensativo per il titolo
+       deformato verticalmente.
+    */
+
+    .intro {
+
+        margin-top: 62vw;
+
+        padding: 0 12px 80px;
+    }
+
+
+    .intro p {
+
+        font-size: 24px;
+
+        line-height: 1.05;
+    }
+
+
+    /* ---------- CONTENT ---------- */
+
+    .content {
+
+        display: block;
+
+        padding: 50px 12px 100px;
+    }
+
+
+    .content-number {
+
+        margin-bottom: 50px;
+
+        font-size: 16px;
+    }
+
+
+    .content-text h2 {
+
+        font-size: 46px;
+
+        line-height: 0.9;
+
+        margin-bottom: 25px;
+    }
+
+
+    .content-text p {
+
+        font-size: 20px;
+
+        line-height: 1.1;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+
+        padding: 16px 12px;
+
+        font-size: 11px;
+    }
+
+
+    .topbar,
+    .topbar-tour,
+    .topbar-musica,
+    .topbar-merch {
+        height: 54px;
+        padding: 0 10px;
+        gap: 8px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+        border: 0px solid rgb(255, 0, 110);
+        border-radius: 6px;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: rgb(255, 0, 110);
+        border-radius: 2px;
+    }
+
+    .menu-toggle:focus-visible {
+        outline: 4px solid #ffffff;
+        outline-offset: 3px;
+    }
+
+    .site-name {
+        flex: 1 1 auto;
+        min-width: 0;
+        max-width: none;
+        font-size: clamp(7px, 2.3vw, 9px);
+        line-height: 1;
+        white-space: nowrap;
+        transform: scaleY(5);
+    }
+
+    .navigation {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+        padding: 8px 12px;
+        background-color: transparent;
+        border-bottom: 2px solid rgb(255, 0, 110);
+    }
+
+    .navigation.is-open {
+        display: flex;
+        background-image: var(--page-background-image);
+        background-size: auto var(--page-background-render-height, 100vh);
+        background-position: center -54px;
+        background-repeat: no-repeat;
+    }
+
+    .navigation a {
+        padding: 12px 8px;
+        font-size: 12px;
+        transform: none;
+        border-bottom: 2px solid rgb(255, 0, 110);
+    }
+
+    .navigation a:last-child {
+        border-bottom: 0;
+    }
+
+    h1 {
+        display: center;
+        font-size: 36px;
+        transform: scaleY(5);
+    }
+
+    h2 {
+        margin-top: 42px;
+        font-size: 16px;
+        line-height: 1.1;
+        transform: scaleY(5);
+    }
+
+    h2 a {
+        --spotify-button-height: 44px;
+        width: auto;
+        padding: 0 8px;
+        white-space: nowrap;
+    }
+
+    h2 a::before {
+        top: 46.9%;
+        left: 50%;
+        height: 68px;
+        width: calc(80% + 8px);
+        transform: translate(-50%, -50%) scaleY(0.2);
+        border-radius: 6px;
+    }
+
+    h3 {
+        display: center;
+        font-size: 20px;
+        transform: scaleY(5);
+        margin-top: 0px;
+    }
+
+    h4 {
+        margin-top: 140px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0;
+        transform: scaleY(5);
+        gap: 16px;
+    }
+
+    h4 .tour-line {
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    h4 .city {
+        min-width: 0;
+    }
+
+    h4 .tour-line > span:last-child {
+        white-space: nowrap;
+    }
+
+    h5 {
+        margin-top: 24px;
+        margin-left: 0;
+        padding: 0 12px;
+        width: 100%;
+        font-size: 10px;
+        line-height: 1.1;
+        transform: scaleY(5);
+        transform-origin: top center;
+        text-align: center;
+    }
+
+    h6 {
+        margin: -30px 18px 0;
+        width: auto;
+        font-size: 9px;
+        line-height: 1.25;
+        letter-spacing: 0;
+        transform: scaleY(5);
+         transform-origin: top center;
+        text-align: center;
+    }
+
+    h6 a {
+        border-radius: 6px;
+    }
+
+    h6 a::before {
+        top: 12.5%;
+        bottom: 12.5%;
+        height: auto;
+        transform: translateX(-50%);
+    }
+
+    h7 {
+        margin-top: 24px;
+        margin-left: 0;
+        padding: 0 12px;
+        width: 100%;
+        font-size: 10px;
+        line-height: 1.1;
+        transform: scaleY(5);
+        transform-origin: top center;
+        text-align: center;
+    }
+
+    .music-slider,
+    .merch-slider {
+        width: 100%;
+        margin: 48px auto 0;
+        padding: 0 12px 36px;
+    }
+
+    .slider {
+        margin-top: 0;
+        gap: 6px;
+    }
+
+    .slider-btn {
+        flex: 0 0 30px;
+        width: 30px;
+        height: 42px;
+        font-size: 24px;
+    }
+
+    footer.home,
+    footer.tour,
+    footer.music,
+    footer.merch {
+        position: fixed;
+        z-index: 900;
+        right: 0;
+        bottom: 8px;
+        left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0 12px;
+        margin: 0;
+        padding: 4px 12px;
+        font-size: 7px;
+        text-align: center;
+        transform: scaleY(5);
+        transform-origin: center bottom;
+    }
+
+}
