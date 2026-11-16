@@ -356,7 +356,7 @@ h3 {
 }
 
 h4 {
-    margin-top: 27vw;
+    margin-top: 18vw;
     font-family: "Nunito", sans-serif;
     font-weight: 900;
     font-size: 1vw;
@@ -366,14 +366,20 @@ h4 {
     transform-origin: top left;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    text-align: left;
+    margin-bottom: 0;
     width: 100%;
 }
 
+h4 + h4 {
+    margin-top: 120px;
+}
+
 h4 .tour-line {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.5fr) minmax(0, 2fr) minmax(0, 1fr);
     align-items: baseline;
-    justify-content: space-between;
+    text-align: left;
     width: 100%;
     font-size: 1.8vw;
 }
@@ -381,6 +387,42 @@ h4 .tour-line {
 h4 .city {
     min-width: 120px;
     display: inline-block;
+}
+h4 a {
+    /* Change these values to resize the link button. */
+    --h4-button-width: auto;
+    --h4-button-height: 140px;
+    display: inline-block;
+    position: relative;
+    isolation: isolate;
+    width: var(--h4-button-width);
+    text-align: center;
+    vertical-align: baseline;
+    color: #ffffff;
+    text-decoration: none;
+}
+h4 a:hover {
+    color: rgb(255, 0, 110);
+}
+h4 a::before {
+    position: absolute;
+    z-index: -1;
+    top: 46.5%;
+    left: 50%;
+    width: calc(100% + 10px);
+    height: var(--h4-button-height);
+    border-radius: 8px;
+    background: rgb(255, 0, 110);
+    content: "";
+    transform: translate(-50%, -50%) scaleY(0.2);
+    transition: background-color 0.2s ease;
+}
+h4 a:hover::before {
+    background: rgb(255, 255, 255);
+}
+h4 a:focus-visible {
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: 4px;
 }
 
 h5 {
@@ -1052,17 +1094,25 @@ footer a:hover {
     }
 
     h4 {
-        margin-top: 140px;
-        font-size: 14px;
+        margin-top: 80px;
+        font-size: 12px;
         line-height: 1;
         letter-spacing: 0;
         transform: scaleY(5);
-        gap: 16px;
+    }
+
+    h4 + h4 {
+        margin-top: 30px;
     }
 
     h4 .tour-line {
-        gap: 8px;
-        font-size: 14px;
+        column-gap: 8px;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.5fr) minmax(0, 2fr) minmax(0, 1fr);
+        font-size: 8px;
+    }
+
+    h4 a {
+        --h4-button-height: 36px;
     }
 
     h4 .city {
